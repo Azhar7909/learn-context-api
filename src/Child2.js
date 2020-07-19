@@ -3,12 +3,11 @@ import CounterReducer from './CounterReducer'
 
 
 export default function Child2() {
-    const [state, dispatch] = useReducer(CounterReducer, 0)
-    const INCREMENT = 'INCREMENT';
+    const [state, dispatch] = useReducer(CounterReducer,0)
     return (
         <div>
             <h1>Reduce value: {state}</h1>
-            <button onClick={()=>dispatch(INCREMENT)}>Increament Reducer</button>
+            <button onClick={()=>dispatch('INCREMENT')}>Increament Reducer</button>
         </div>
     )
 }
